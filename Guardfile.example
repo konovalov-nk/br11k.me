@@ -1,4 +1,4 @@
-guard 'puma', :daemon => true, :port => 4001, :control_port => 9293, :environment => 'production', :bind => 'unix:///home/user/app/shared/sockets/puma.sock' do
+guard 'puma', :daemon => true, :port => 4002, :control_port => 9294, :environment => 'development', :bind => 'unix:///home/user/app/shared/sockets/puma.sock' do
   watch('Gemfile.lock')
   watch(%r{^app|config|lib/.*})
 end
