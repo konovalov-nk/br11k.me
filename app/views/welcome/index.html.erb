@@ -1,3 +1,95 @@
-<h1>Welcome!</h1>
-<p>Using Rails 5.0</p>
+<section id="home-slider">
+  <div class="container">
+    <div class="row">
+      <div class="main-slider image-zoom">
+        <div class="slide-text">
+          <h1>Hello,</h1>
+          <p>Welcome to br11k personal blog.</p>
+          <a href="#" class="btn btn-common">Register</a>
+        </div>
+        <%= image_tag 'triangle/home/slider/cat.png', alt: 'slider image', class: 'slider-cat' %>
+        <%= image_tag 'triangle/home/slider/chair.png', alt: 'slider image', class: 'slider-chair' %>
+        <%= image_tag 'triangle/home/slider/cup-tea.png', alt: 'slider image', class: 'slider-cup-tea' %>
+        <%= image_tag 'triangle/home/slider/display-code-pacman.png', alt: 'slider image', class: 'slider-display-code-pacman' %>
+        <%= image_tag 'triangle/home/slider/guitar-crop.png', alt: 'slider image', class: 'slider-guitar' %>
+        <%= image_tag 'triangle/home/slider/mario-mushroom.png', alt: 'slider image', class: 'slider-mario-mushroom' %>
+        <%= image_tag 'triangle/home/slider/plant-ruby.png', alt: 'slider image', class: 'slider-plant-ruby' %>
+        <%= image_tag 'triangle/home/slider/table.png', alt: 'slider image', class: 'slider-table' %>
+      </div>
+    </div>
+  </div>
+  <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+</section>
+<!--/#home-slider-->
 
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="single-service">
+          <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+            <%= image_tag 'triangle/home/web.svg', alt: '', class: '' %>
+          </div>
+          <h2>Programming</h2>
+          <p>Building things is fun. Adding business values and decreasing costs? Even more.</p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="single-service">
+          <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+            <%= image_tag 'triangle/home/technology-2.svg', alt: '', class: '' %>
+          </div>
+          <h2>Video Games</h2>
+          <p>Inspiring you since <a href="https://en.wikipedia.org/wiki/Cathode-ray_tube_amusement_device">1947</a>.</p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+        <div class="single-service">
+          <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+            <%= image_tag 'triangle/home/music-2.svg', alt: '', class: '' %>
+          </div>
+          <h2>Music</h2>
+          <p>A way to express yourself in enjoyable way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#services-->
+
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="single-features">
+        <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+          <%= image_tag 'triangle/home/cup.png', alt: '', class: 'img-responsive' %>
+        </div>
+        <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+          <h2>Stay a while and read</h2>
+          <p>The main purpose of the website is sharing experiences across three main topics:
+            Programming, Video Games, Music. Feel free to explore.
+          </p>
+        </div>
+      </div>
+      <div class="single-features">
+        <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+          <h2>Commentary and Feedback</h2>
+          <p>Features are coming soon!</p>
+        </div>
+        <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+          <%= image_tag 'triangle/home/type-machine.png', alt: '', class: 'img-responsive' %>
+        </div>
+      </div>
+      <div class="single-features">
+        <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+          <%= image_tag 'triangle/home/writing.png', alt: '', class: 'img-responsive' %>
+        </div>
+        <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+          <h2>Creating and writing your own blog posts</h2>
+          <p>Features are coming soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#features-->
