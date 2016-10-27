@@ -48,3 +48,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Multi themes support
 gem 'themes_on_rails'
+# Better environment variables handling
+gem 'figaro'
+# Authentication solution
+gem 'devise'
+# Using SparkPost for ActionMailer
+gem 'sparkpost_rails'

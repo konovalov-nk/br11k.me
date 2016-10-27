@@ -47,7 +47,7 @@ Rails.application.configure do
   config.log_level = :debug
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [ :request_id ]
+  config.log_tags = [:request_id]
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
@@ -56,6 +56,15 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "br11k_me_#{Rails.env}"
   config.action_mailer.perform_caching = false
+
+  # Action mailer default URL. This is required to properly generate links inside the e-mail views.
+  config.action_mailer.default_url_options = {
+    host: ENV['action_mailer_host'] || 'localhost',
+    port: ENV['action_mailer_port'] || 3000
+  }
+
+  # Using SparkPost for Action Mailer
+  config.action_mailer.delivery_method = :sparkpost
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

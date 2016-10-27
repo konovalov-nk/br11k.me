@@ -3,9 +3,9 @@
     <div class="row">
       <div class="main-slider image-zoom">
         <div class="slide-text">
-          <h1>Hello,</h1>
+          <h1>Hello, <%= user_signed_in? ? current_user.nickname : '' %></h1>
           <p>Welcome to br11k personal blog.</p>
-          <a href="#" class="btn btn-common">Register</a>
+          <%= link_to 'Register', 'users/sign_up', class: 'btn btn-common' %>
         </div>
         <%= image_tag 'triangle/home/slider/cat.png', alt: 'slider image', class: 'slider-cat' %>
         <%= image_tag 'triangle/home/slider/chair.png', alt: 'slider image', class: 'slider-chair' %>

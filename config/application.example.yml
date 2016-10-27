@@ -1,0 +1,20 @@
+# Add configuration values here, as shown below, and copy file to 'application.yml'
+production:
+# Mail
+ action_mailer_host: 'example.com'
+ action_mailer_port: '3000'
+# Authentication
+ devise_mailer_sender: 'admin@example.com'
+ devise_secret_key: 'devisekeyhere'
+# Application secret key, use "RAILS_ENV=production rake secret" in terminal to generate one
+ secret_key_base: 'verylargecryptedkey'
+ sparkpost_api_key: 'sparkpostkeyhere'
+development:
+ action_mailer_host: 'example.com'
+ action_mailer_port: '3000'
+ devise_mailer_sender: 'admin@example.com'
+ devise_secret_key: 'devisekeyhere'
+ secret_key_base: 'verylargecryptedkey'
+ sparkpost_api_key: 'sparkpostkeyhere'
+# Used to show debug console in development mode
+ whitelist_ip: '127.0.0.1'
