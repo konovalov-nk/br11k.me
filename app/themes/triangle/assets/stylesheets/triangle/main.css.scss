@@ -311,6 +311,10 @@
   color: #00aeef;
 }
 
+/* Navbar Logo */
+.navbar-brand img {
+  height: 2.2em;
+}
 
 /*  Dropdown menu*/
 
@@ -633,6 +637,7 @@ ul.sub-menu {
   bottom: 183px;
   z-index: 4;
   height: calc(#{$image-baseline-percent} - #{$image-relative-cat});
+  cursor: pointer;
 }
 
 .animate-in .slider-cat {
@@ -840,7 +845,7 @@ ul.sub-menu {
 }
 
 .single-features .col-sm-6 {
-  margin-top: 50px;
+  //margin-top: 50px;
 }
 
 .single-features:last-child {
